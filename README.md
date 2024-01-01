@@ -2,17 +2,22 @@
 
 This Solidity contract represents the "Degen" token deployed on the Fuji Chain. It is an ERC-20 token with additional features for managing an in-game store.
 
+- Token Name: Degen 
+- Token Symbol: DGN
+- Decimals: 18
+- Total Supply: 0 (initialized value)
+
 ## Features
 
-1. **In-Game Store**: This contract includes an in-game store where users can purchase various items using the DGN token.
+1. **Minting**: The owner of the contract has the ability to mint new DGN tokens.
 
-2. **Minting**: The owner of the contract has the ability to mint new DGN tokens.
+2. **Transfer DGNs**: Users can transfer DGN tokens to other addresses.
 
-3. **Burning**: Users can burn (destroy) their DGN tokens.
+3. **In-Game Store**: This contract includes an in-game store where users can purchase various items using the DGN token
 
 4. **Check Balance**: Users can check their DGN token balance.
 
-5. **Transfer DGNs**: Users can transfer DGN tokens to other addresses.
+5. **Burning**: Users can burn (destroy) their DGN tokens.
 
 ## In-Game Store
 
@@ -38,8 +43,6 @@ The in-game store includes the following items:
 - `getStoreItem(uint256 index)`: Get details of a specific store item.
 
 - `redeemStoreItem(uint256 itemIndex)`: Redeem a store item by spending DGN tokens.
-
-- `getAllStoreItems()`: Get details of all available store items.
 
 - `burnDGNs(uint256 amount)`: Burn (destroy) a specified amount of DGN tokens.
 
