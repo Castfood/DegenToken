@@ -46,10 +46,6 @@ contract Degen is ERC20, ERC20Burnable, Ownable {
         transfer(owner(), itemPrice);
     }
 
-    function getAllStoreItems() public view returns (StoreItem[] memory) {
-        return storeItems;
-    }
-
     function burnDGNs(uint256 amount) public {
         assert(balanceOf(msg.sender) >= amount);
         _burn(msg.sender, amount);
