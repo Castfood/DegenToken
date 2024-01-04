@@ -23,13 +23,10 @@ This Solidity contract represents the "Degen" token deployed on the Fuji Chain. 
 
 The in-game store includes the following items:
 
-1. Fortnite Skin 1 - 50 DGN
-2. Fortnite Emote Pack - 100 DGN
-3. Glider Upgrade - 200 DGN
-4. Legendary Pickaxe - 200 DGN
-5. Back Bling Collection - 250 DGN
-6. Mythic Outfit - 500 DGN
-7. Epic Weapon Wrap - 1000 DGN
+1. Glider Upgrade - 200 DGN
+2. Legendary Pickaxe - 200 DGN
+3. Mythic Outfit - 500 DGN
+
 
 ## Deploy Contract
 
@@ -44,7 +41,7 @@ The in-game store includes the following items:
 
 - `redeemStoreItem(uint256 itemIndex)`: Redeem a store item by spending DGN tokens.
 
-- `burnDGNs(uint256 amount)`: Burn (destroy) a specified amount of DGN tokens.
+- `burnToken(uint256 amount)`: Burn (destroy) a specified amount of DGN tokens.
 
 - `checkBalance(address _address)`: Check the DGN token balance of an address.
 
