@@ -10,6 +10,7 @@ contract Degen is ERC20, Ownable {
         uint256 priceInDGN;
     }
 
+
     mapping(uint256 => StoreItem) private storeItems;
     uint256 private numStoreItems;
 
